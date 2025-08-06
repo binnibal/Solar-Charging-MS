@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "poppins",sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,yellow , rgb(13, 106, 247));
+}
+
+.main{
+    width:100%;
+    max-width: 540px;
+    background: #fff;
+    border-radius: 10px;
+    padding:30px 40px 70px;
+}
+
+#txtBox{
+    margin-top: 15px;
+    border:1px solid;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+}
+#txtBox:valid:active {
+    margin-top: 15px;
+    border:2px solid;
+    border-color: yellow;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+}
+
+
+#selector{
+    margin-top: 15px;
+    border:1px solid;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
