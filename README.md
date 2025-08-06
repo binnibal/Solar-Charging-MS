@@ -83,13 +83,12 @@ For more info or inquiries, contact me at:
 
 ---
 ## IMPORTANT / مهم 
-1.We didn't use ai in anything but Colors !!
-2.This project is still under development, and we have not reached the full version yet
+1.We didn't use ai in anything but Colors and this readme file.
+2.This project is still under development, and we have not reached the full version yet.
 
 
-1.لم نستخدم الذكاء الاصطناعي لأي شيء سوى الألوان!
-2.هذا المشروع ما زال تحت التطوير، ولم نصل للنسخة الكاملة بعد 
-
+1.لم نستخدم الذكاء الاصطناعي لأي شيء سوى الألوان وملف الreadme .
+2.هذا المشروع ما زال تحت التطوير، ولم نصل للنسخة الكاملة بعد .
 
 ## Tysm
 Thank you for your support!  
