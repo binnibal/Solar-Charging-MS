@@ -1,98 +1,95 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: "poppins",sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
 }
 
-.container{
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg,#fff176,rgb(13, 106, 247));
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fff176, #0d6af7);
 }
 
-.main{
-    width:100%;
-    max-width: 540px;
-    background: #fff;
-    border-radius: 10px;
-    padding:30px 40px 70px;
+.main {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 40px 70px;
 }
 
-#txtBox{
-    background:transparent;
-    outline: none;
-    margin-top: 15px;
-    border:1px solid;
-    border-radius: 5px;
-    width: 250px;
-    height: 30px;
-    transition: 0.3s;
-    z-index: 1111;
+#txtBox {
+  background: transparent;
+  outline: none;
+  margin-top: 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 250px;
+  height: 30px;
+  transition: 0.3s;
+  z-index: 1111;
   padding: 15px 10px 5px 10px;
 
-    position:relative;
+  position: relative;
 }
-#txtBox:focus, #txtBox:valid     {
-    transition:0.3s;
-    border:2px solid #ffd000;
-    color:black;
-    
+#txtBox:focus,
+#txtBox:valid {
+  transition: 0.3s;
+  border: 2px solid #ffd000;
+  color: black;
 }
 #txtBox:focus ~ #placehold,
 #txtBox:valid ~ #placehold {
-    z-index: 2222;
-    color: #ffd000;
-    transform: translateX(3px) translateY(-7px);
-    transition: 0.3s;
-    font-size: 0.65rem;
-    font-weight: 600;
-    padding: 0 10px;
-    background: #fff;
-    letter-spacing: 0.1rem;
+  z-index: 2222;
+  color: #ffd000;
+  transform: translateX(3px) translateY(-7px);
+  transition: 0.3s;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0 10px;
+  background: #fff;
+  letter-spacing: 0.1rem;
 }
 .row {
-    position: relative;
-    margin-top: 20px;
+  position: relative;
+  margin-top: 20px;
 }
 
-#placehold{
-position:absolute;
-left: 5px;
-top: 22px;
-padding: 0 5px;
-pointer-events: none;
-transition: 0.3s;
+#placehold {
+  position: absolute;
+  left: 5px;
+  top: 22px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: 0.3s;
 }
 
-#selector{
-    position:absolute;
-    margin-top: 15px;
-    right: 105px;
-    border:1px solid;
-    border-radius: 5px;
-    width: 100px;
-    height: 30px;
-    transition: 0.6s;
-
+#selector {
+  position: absolute;
+  margin-top: 15px;
+  right: 105px;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  transition: 0.6s;
 }
 
-
-#selector:focus , selector:valid{
-    
-    border:3px solid #fff176;
-    transition: 0.3s;
-    
+#selector:focus,
+selector:valid {
+  border: 3px solid #fff176;
+  transition: 0.3s;
 }
-option{
-    gap:1rem;
-    display: flex;
-    align-items: center;
+option {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
 }
-option:checked{
-    background:#ffd000;
-    color : #fff
+option:checked {
+  background: #ffd000;
+  color: #fff;
 }
