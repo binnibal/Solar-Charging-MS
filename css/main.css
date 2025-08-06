@@ -22,7 +22,7 @@
   padding: 30px 40px 70px;
 }
 
-#txtBox {
+.txtBox {
   background: transparent;
   outline: none;
   margin-top: 15px;
@@ -36,14 +36,14 @@
 
   position: relative;
 }
-#txtBox:focus,
-#txtBox:valid {
+.txtBox:focus,
+.txtBox:valid {
   transition: 0.3s;
   border: 2px solid #ffd000;
   color: black;
 }
-#txtBox:focus ~ #placehold,
-#txtBox:valid ~ #placehold {
+.txtBox:focus ~ #placehold,
+.txtBox:valid ~ #placehold {
   z-index: 2222;
   color: #ffd000;
   transform: translateX(3px) translateY(-7px);
@@ -59,7 +59,7 @@
   margin-top: 20px;
 }
 
-#placehold {
+.placehold {
   position: absolute;
   left: 5px;
   top: 22px;
@@ -68,7 +68,7 @@
   transition: 0.3s;
 }
 
-#selector {
+.selector {
   position: absolute;
   margin-top: 15px;
   right: 103px;
@@ -79,7 +79,7 @@
   transition: 0.6s;
 }
 
-#selector:focus,
+.selector:focus,
 selector:valid {
   border: 3px solid #fff176;
   transition: 0.3s;
@@ -93,7 +93,7 @@ option:checked {
   background: #ffd000;
   color: #fff;
 }
-#numInput {
+.numInput {
   outline: none;
   position: absolute;
   width: 65px;
@@ -102,7 +102,7 @@ option:checked {
   margin-top: 15px;
   transition: 0.3s;
 }
-#numInput:focus {
+.numInput:focus {
   transition: 0.3s;
   border: 2px solid #ffd000;
   color: black;
