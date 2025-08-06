@@ -43,6 +43,7 @@ const option1 = document.createElement('option');
 
 
 const numInput = document.createElement('input');
+numInput.type = 'number';
 numInput.className = 'numInput';
 numInput.required = true;
 numInput.setAttribute('min','1');
