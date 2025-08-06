@@ -23,21 +23,34 @@
 }
 
 #txtBox{
+    background:transparent;
+    outline: none;
     margin-top: 15px;
     border:1px solid;
     border-radius: 5px;
     width: 250px;
     height: 30px;
+    transition: 0.3s;
+    z-index: 1111;
+    padding:10px;
+    position:relative;
 }
-#txtBox:valid:active {
-    margin-top: 15px;
-    border:2px solid;
-    border-color: yellow;
-    border-radius: 5px;
-    width: 250px;
-    height: 30px;
+#txtBox:focus, #txtBox:valid     {
+    transition:0.3s;
+    border:2px solid yellow;
+    
 }
 
+.row{
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+}
+#placehold{
+position:absolute;
+margin-left:-242px;
+padding-right: 105px;
+}
 
 #selector{
     margin-top: 15px;
@@ -46,3 +59,4 @@
     width: 100px;
     height: 30px;
 }
+
