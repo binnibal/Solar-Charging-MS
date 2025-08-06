@@ -33,12 +33,11 @@ SunChargeHub is a project to manage solar charging points in Gaza, aiming to org
 ## Technologies Used / التقنيات المستخدمة
 
 - HTML / CSS / JavaScript  
-- Firebase (cloud database)  
-- Flutter (optional - for mobile app development)
+-maybe node.js in the future
+
 
 - HTML / CSS / JavaScript  
-- Firebase (قاعدة بيانات سحابية)  
-- Flutter (اختياري - لتطوير التطبيق على الهواتف)
+-ربما nodejs مستقبلا 
 
 ---
 
@@ -77,12 +76,20 @@ This project is open source under the MIT license.
 ## Contact / تواصل
 
 For more info or inquiries, contact me at:  
-[Your email or social links]
+[mohammedothmann.2277@gmail.com,insta:bin.nibal]
 
 للمزيد من المعلومات أو الاستفسارات، تواصل معي على:  
-[بريدك الإلكتروني أو حسابات التواصل]
+[mohammedothmann.2277@gmail.com, insta :bin.nibal]
 
 ---
+## IMPORTANT / مهم 
+This project is still under development, and we have not reached the full version yet
 
+
+
+هذا المشروع ما زال تحت التطوير، ولم نصل للنسخة الكاملة بعد 
+
+
+## Tysm
 Thank you for your support!  
 شكراً لدعمكم!
