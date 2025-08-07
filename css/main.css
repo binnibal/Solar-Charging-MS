@@ -21,12 +21,11 @@
   border-radius: 10px;
   padding: 30px 40px 70px;
   position: relative;
-  
 }
-#tables{
+#tables {
   display: none;
 }
-.main h2{
+.main h2 {
   text-align: center;
 }
 .txtBox {
@@ -110,126 +109,150 @@ option:checked {
   transition: 0.3s;
 }
 .numInput:focus {
-  
   border: 2px solid #ffd000;
   color: black;
   transition: 0.3s;
 }
-#btnContainer{
-    display: flex;
-    background-color: transparent;
-    align-items: center;
-    justify-content: center;
+#btnContainer {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
 }
-#btn{
-    margin-top: 30px;
-    outline-color: #fff;
-    outline-style: solid;
-    outline-width: 1px;
-    background: #ffd000;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 50%;
-    border-width: 0.01cm;
-    cursor: pointer;
-    transition: 0.6s;
+#btn {
+  margin-top: 30px;
+  outline-color: #fff;
+  outline-style: solid;
+  outline-width: 1px;
+  background: #ffd000;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  
+  border-radius: 50%;
+  border-width: 0.01cm;
+  cursor: pointer;
+  transition: 0.6s;
+
 }
-#btn:hover{
-    outline-width: 0.1cm;
-    outline-color: #fff;
-    margin-top: 25px;
-    transform: scale(1.4);
-    border:4px solid #0d6af7;
-    transition: 0.6s;
-    cursor: pointer;
+#btn:hover {
+  outline-width: 0.1cm;
+  outline-color: #fff;
+  margin-top: 25px;
+  transform: scale(1.3);
+  border: 4px solid #0d6af7;
+  transition: 0.6s;
+  cursor: pointer;
 }
-.notes{
+.notes {
   margin-top: 15px;
   background: transparent;
-  width: 100%;
-  
+  width: 430px;
 }
-.notesInput{
+.notesInput {
   width: 100%;
   resize: none;
-    overflow: hidden;
-    min-height: 60px;
-    padding:15px;
-    transition: 0.3s;
+  overflow: hidden;
+  min-height: 60px;
+  padding: 15px;
+  transition: 0.3s;
 }
 
-.notesInput:focus{
+.notesInput:focus {
   outline: none;
   transition: 0.3s;
   border: 2px solid #ffd000;
   color: black;
-  
 }
 
-.tabs{
-  display:flex;
+.tabs {
+  display: flex;
   justify-content: center;
-  padding:10px;
-  gap:10px;
-  
+  padding: 10px;
+  gap: 10px;
 }
 
-.tabs button{  
-  background:transparent;
-  border:0.3px solid darkblue;
+.tabs button {
+  background: transparent;
+  border: 0.3px solid darkblue;
   border-radius: 10px;
-  width:130px;
+  width: 130px;
   height: 30px;
   font-size: 16px;
   cursor: pointer;
-  transition:0.3s
-}
-.tabs .unselected{
-  scale:0.9;
   transition: 0.3s;
-  
 }
-.tabs .unselected:hover{
+.tabs .unselected {
+  scale: 0.9;
+  transition: 0.3s;
+}
+.tabs .unselected:hover {
   transform: scale(1.1);
-  background: #e7d689;
-  color:#fff;
+  background: #ffe675;
+  color: #fff;
   cursor: pointer;
   transition: 0.3s;
-  
-  
 }
-.tabs .selected{
-  border:0.3px solid darkblue;
+.tabs .selected {
+  border: 0.3px solid darkblue;
   background: #ffd000;
-  color:#fff;
+  color: #fff;
   cursor: pointer;
   transition: 0.3s;
 }
-#mangement{
+#mangement {
   display: none;
 }
-#tables{
+#tables {
   border-collapse: collapse;
   border-radius: 10px;
-  margin:25px 0;
-  font-size:0.9em;
-  
+  margin: 25px 0;
+  font-size: 0.9em;
+
   min-width: 400px;
-  
-  
 }
-#tables table{
-  width:450px;
+#tables table {
+  width: 450px;
 }
 #tables th,
 #tables td {
-  padding: 10px 20px; 
+  padding: 10px 20px;
 }
-#tables thead tr{
+#tables thead tr {
   background-color: #ffd000;
-  color:white;
+  color: white;
   text-align: center;
+}
+
+#finishBtn {
+  margin-top: 30px;
+  outline-color: #fff;
+  outline-style: solid;
+  outline-width: 1px;
+  background: #ffd000;
+  color: #fff;
+  width: 70px;
+  height: 50px;
+  font-size: 20px;
+
+  border-radius: 10px;
+  border-width: 0.01cm;
+  cursor: pointer;
+  transition: 0.6s;
+
+}
+#finishBtn:hover{
+  
+  outline-width: 0.05cm;
+  outline-color: black;
+  margin-top: 25px;
+  transform: scale(1.15);
+    border: 3px solid #0d6af7;
+  transition: 0.6s;
+  cursor: pointer;
+}
+#finishBtnContainer{
+  margin-left:43%;
   
 }

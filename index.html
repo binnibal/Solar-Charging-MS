@@ -15,18 +15,18 @@
         </div>
         <div id="mangementTab" class="tabContent">
           <h2>Solar Charging Mangement System</h2>
-          <div id="btnContainer"><button id="btn">Add</button></div>
+          <div id="btnContainer"><button id="btn">+</button></div>
           <div class="rowsContainer">
             <div class="row">
-              <!-- <input type="text" id="bruh" class="txtBox" required />
-          <label class="placehold" for="bruh">Enter the name here</label>
+              <input type="text" id="nameInput" class="txtBox" required />
+          <label class="placehold" for="nameInput">Enter the name here</label>
           <select class="selector" required>
             <option>Phone</option>
             <option>Laptop</option>
             <option>Power Bank</option>
             <option>Battery</option>
           </select>
-            <input type="number" value="1"  class="numInput" name="numInput" min="1" max="10" required /> -->
+            <input type="number" value="1"  class="numInput" name="numInput" min="1" max="10" required />
             </div>
           </div>
           <div class="notes">
@@ -36,10 +36,12 @@
               placeholder="Enter client notes here !"
             ></textarea>
           </div>
+
+          <div id="finishBtnContainer"><button id="finishBtn">Add</button></div>
         </div>
 
         <div id="tables" class="tab-content" >
-          <table>
+          <table id="table">
           <thead>
               <tr>
                 <td>Name</td>
