@@ -13,8 +13,6 @@ btn.addEventListener('click',(e)=>{
   }
   else{
 
-  rowCount++;
-  console.log(rowCount);
     const row = document.createElement('div');
 row.className = "row";
 
@@ -73,12 +71,29 @@ numInput.setAttribute('min','1');
 numInput.setAttribute('max','10');
 numInput.setAttribute('name', 'numInput');
 
-
-     row.appendChild(txtBox);
+    if(rowCount == 0){
+  row.appendChild(txtBox);
   row.appendChild(placehold);
   row.appendChild(selector);
   row.appendChild(numInput);
     rowsContainer.appendChild(row);
+  
+  rowCount++;
+  console.log(rowCount);}
+    
+    else if (rowCount >0){
+      txtBox.disabled = true;
+      txtBox.value ='This MS is made by : Mohammed Othman';
+      txtBox.style.fontSize = '11px';
+  row.appendChild(txtBox);
+
+  row.appendChild(selector);
+  row.appendChild(numInput);
+  rowsContainer.appendChild(row);
+  
+  rowCount++;
+  console.log(rowCount);
+    }
     
     
 }});
