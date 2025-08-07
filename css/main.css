@@ -20,6 +20,7 @@
   background: #fff;
   border-radius: 10px;
   padding: 30px 40px 70px;
+  position: relative;
 }
 
 .txtBox {
@@ -161,3 +162,41 @@ option:checked {
   
 }
 
+.tabs{
+  display:flex;
+  justify-content: center;
+  gap:10px;
+  
+}
+
+.tabs button{  
+  background:transparent;
+  border:0.3px solid darkblue;
+  border-radius: 10px;
+  width:130px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:0.3s
+}
+.tabs .unselected{
+  scale:0.9;
+  transition: 0.3s;
+  
+}
+.tabs .unselected:hover{
+  transform: scale(1.1);
+  background: #e7d689;
+  color:#fff;
+  cursor: pointer;
+  transition: 0.3s;
+  
+  
+}
+.tabs .selected{
+  border:0.3px solid darkblue;
+  background: #ffd000;
+  color:#fff;
+  cursor: pointer;
+  transition: 0.3s;
+}

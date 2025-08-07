@@ -2,6 +2,8 @@ const container = document.querySelector('.container');
 const main = document.querySelector('.main');
 const rowsContainer = document.querySelector('.rowsContainer');
 const btn = document.getElementById('btn');
+const Mtab = document.getElementById('Mtab');
+const Ttab =document.getElementById('Ttab');
 let rowCount =0;
 const maxRows= 4;
 
@@ -97,5 +99,16 @@ numInput.setAttribute('name', 'numInput');
     
     
 }});
+
+Mtab.addEventListener('click',(e) => {
+Mtab.className='selected';
+Ttab.className='unselected';
+});
+
+
+Ttab.addEventListener('click',(e) => {
+Ttab.className='selected';
+Mtab.className='unselected';
+});
 
 
