@@ -1,13 +1,15 @@
 const container = document.querySelector('.container');
 const main = document.querySelector('.main');
 const rowsContainer = document.querySelector('.rowsContainer');
-const btn = document.getElementById('btn');
-const Mtab = document.getElementById('Mtab');
-const Ttab =document.getElementById('Ttab');
+const addBtn = document.getElementById('btn');
+const Mtab = document.getElementById('mangementTab');
+const Ttab = document.getElementById('tables');
+const MtabB = document.getElementById('Mtab');
+const TtabB =document.getElementById('Ttab');
 let rowCount =0;
 const maxRows= 4;
 
-btn.addEventListener('click',(e)=>{
+addBtn.addEventListener('click',(e)=>{
      if (rowCount >= maxRows) {
     alert("You can only add up to 4 rows.");
     
@@ -100,15 +102,22 @@ numInput.setAttribute('name', 'numInput');
     
 }});
 
-Mtab.addEventListener('click',(e) => {
-Mtab.className='selected';
-Ttab.className='unselected';
+MtabB.addEventListener('click',(e) => {
+
+  Ttab.style.display ='none';
+  addBtn.style.display = 'inline-block';
+  Mtab.style.display ='block';
+MtabB.className='selected';
+TtabB.className='unselected';
 });
 
 
-Ttab.addEventListener('click',(e) => {
-Ttab.className='selected';
-Mtab.className='unselected';
+TtabB.addEventListener('click',(e) => {
+  Mtab.style.display ='none';
+  addBtn.style.display = 'none';
+  Ttab.style.display ='block';
+TtabB.className='selected';
+MtabB.className='unselected';
 });
 
 
