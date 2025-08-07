@@ -42,8 +42,8 @@
   border: 2px solid #ffd000;
   color: black;
 }
-.txtBox:focus ~ #placehold,
-.txtBox:valid ~ #placehold {
+.txtBox:focus ~ .placehold,
+.txtBox:valid ~ .placehold {
   z-index: 2222;
   color: #ffd000;
   transform: translateX(3px) translateY(-7px);

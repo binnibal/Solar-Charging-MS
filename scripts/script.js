@@ -18,17 +18,28 @@ btn.addEventListener('click',(e)=>{
     const row = document.createElement('div');
 row.className = "row";
 
+
+
      const txtBox = document.createElement('input')
 txtBox.setAttribute('type','text');
 txtBox.required = true;
 txtBox.className='txtBox'
+txtBox.id = `txtBox-${rowCount}`; 
+
+
+
+
 const placehold = document.createElement('label');
 placehold.className = 'placehold'
-placehold.setAttribute('for','txtBox');
-placehold.textContent= 'Enter the name here'
+placehold.setAttribute('for',txtBox.id);
+placehold.textContent= 'Enter the name here';
+
+
+
 const selector = document.createElement('select');
 selector.required = true;
 selector.className ='selector'
+
 const phone = document.createElement('option');
   phone.value = 'Phone';
   phone.textContent = 'Phone';
@@ -36,9 +47,11 @@ const phone = document.createElement('option');
   const laptop = document.createElement('option');
   laptop.value = 'Laptop';
   laptop.textContent = 'Laptop';
+
   const powerBank = document.createElement('option');
   powerBank.value ='Power Bank';
   powerBank.textContent ='Power Bank';
+
   const battery = document.createElement('option');
   battery.value = ('Battery');
   battery.textContent = ('Battery');
@@ -49,6 +62,8 @@ const phone = document.createElement('option');
   selector.appendChild(battery);
 
 
+
+
 const numInput = document.createElement('input');
 numInput.type = 'number';
 numInput.className = 'numInput';
@@ -57,11 +72,12 @@ numInput.required = true;
 numInput.setAttribute('min','1');
 numInput.setAttribute('max','10');
 numInput.setAttribute('name', 'numInput');
+
+
      row.appendChild(txtBox);
   row.appendChild(placehold);
   row.appendChild(selector);
   row.appendChild(numInput);
-  main.appendChild(rowsContainer);
     rowsContainer.appendChild(row);
     
     
