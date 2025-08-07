@@ -103,7 +103,7 @@ option:checked {
   transition: 0.3s;
 }
 .numInput:focus {
-  transition: 0.3s;
+  
   border: 2px solid #ffd000;
   color: black;
   transition: 0.3s;
@@ -138,3 +138,26 @@ option:checked {
     transition: 0.6s;
     cursor: pointer;
 }
+.notes{
+  margin-top: 15px;
+  background: transparent;
+  width: 100%;
+  
+}
+.notesInput{
+  width: 100%;
+  resize: none;
+    overflow: hidden;
+    min-height: 60px;
+    padding:15px;
+    transition: 0.3s;
+}
+
+.notesInput:focus{
+  outline: none;
+  transition: 0.3s;
+  border: 2px solid #ffd000;
+  color: black;
+  
+}
+

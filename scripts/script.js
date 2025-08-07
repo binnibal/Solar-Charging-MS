@@ -1,12 +1,13 @@
 const container = document.querySelector('.container');
 const main = document.querySelector('.main');
+const rowsContainer = document.querySelector('.rowsContainer');
 const btn = document.getElementById('btn');
 let rowCount =0;
-const maxRows= 10;
+const maxRows= 4;
 
 btn.addEventListener('click',(e)=>{
      if (rowCount >= maxRows) {
-    alert("You can only add up to 10 rows.");
+    alert("You can only add up to 4 rows.");
     
     return; 
   }
@@ -28,23 +29,30 @@ placehold.textContent= 'Enter the name here'
 const selector = document.createElement('select');
 selector.required = true;
 selector.className ='selector'
-const option1 = document.createElement('option');
-  option1.value = 'Phone';
-  option1.textContent = 'Phone';
+const phone = document.createElement('option');
+  phone.value = 'Phone';
+  phone.textContent = 'Phone';
 
-  const option2 = document.createElement('option');
-  option2.value = 'Laptop';
-  option2.textContent = 'Laptop';
-  const option3 = document.createElement('option');
-  option3.value ='Battery';
-  selector.appendChild(option1);
-  selector.appendChild(option2);
-  selector.appendChild(option3);
+  const laptop = document.createElement('option');
+  laptop.value = 'Laptop';
+  laptop.textContent = 'Laptop';
+  const powerBank = document.createElement('option');
+  powerBank.value ='Power Bank';
+  powerBank.textContent ='Power Bank';
+  const battery = document.createElement('option');
+  battery.value = ('Battery');
+  battery.textContent = ('Battery');
+  
+  selector.appendChild(phone);
+  selector.appendChild(laptop);
+  selector.appendChild(powerBank);
+  selector.appendChild(battery);
 
 
 const numInput = document.createElement('input');
 numInput.type = 'number';
 numInput.className = 'numInput';
+numInput.value = '1';
 numInput.required = true;
 numInput.setAttribute('min','1');
 numInput.setAttribute('max','10');
@@ -53,8 +61,10 @@ numInput.setAttribute('name', 'numInput');
   row.appendChild(placehold);
   row.appendChild(selector);
   row.appendChild(numInput);
-
-    main.appendChild(row);}
-});
+  main.appendChild(rowsContainer);
+    rowsContainer.appendChild(row);
+    
+    
+}});
 
 
